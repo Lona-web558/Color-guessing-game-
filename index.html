@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Color Game</title>
+    <link rel="stylesheet" href="index.css">
+    <!--font awesome icons stylesheet-->
+    <script src="https://kit.fontawesome.com/a8474c2fa5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="alertCont">
+        <div id="alertBox">
+            <b style="color: #000;">How to play</b><br>
+            Just click on the color of the box that matches the color value displayed on the header. Each correct guess will add 1 point to your score.<br>Let's see how well you do! 😏<br><br>
+        <button id="closeAlert">Close</button>
+        </div>
+    </div>
+    <header>
+        Guess The Color <br>
+        <span id="arrow" class="fas fa-arrow-down"></span><br>
+        <span id="colorId">RGB</span>
+    </header>
+    <div id="score">0</div>
+
+    <!--The boxes container-->
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <!--The pop-ups-->
+    <div id="correct">
+        Correct <span>&check;</span>
+    </div>
+    <div id="wrong">
+        Wrong <span class="fas fa-times"></span>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
